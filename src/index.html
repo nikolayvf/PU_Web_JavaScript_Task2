@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  
+
+</head>
+
+<body class="col-12" >
+  <div class="card">
+    <div class="container">
+      <h1>Бизнес калкулатор</h1>
+      <div class="row">
+        <div class="col-6">
+          <label for="income">Приход</label>
+          <input type="number" id="income" name="income" class="form-control" value="0" min="0">
+        </div>
+        <div class="col-6">
+          <label for="expense">Разход</label>
+          <input type="number" id="expense" name="expense" class="form-control" value="0" min="0">
+        </div>
+        <div class="col-6">
+          <label for="incomeSecond">Приход месец №2</label>
+          <input type="number" id="incomeSecond" name="incomeSecond" class="form-control" value="0" min="0">
+        </div>
+        <div class="col-6">
+          <label for="expenseSecond">Разход месец №2</label>
+          <input type="number" id="expenseSecond" name="expenseSecond" class="form-control" value="0" min="0">
+        </div>
+        <div class="col-12">
+          <button class="secondMonth btn btn-secondary">+ Още един месец</button>
+        </div>
+        <div class="col-6">
+          <button class="tax btn">Данък</button>
+        </div>
+        <div class="col-6">
+          <button class="Profit btn">Печалба</button>
+        </div>
+        <div class="col-12">
+          <div class="col-6 labels">
+            <span>Данък:</span>
+            <span>Печалба:</span>
+          </div>
+          <div class="col-6 values">
+            <span class="valueTax">0лв</span>
+            <span class="valueProfit">0лв</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
