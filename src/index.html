@@ -8,29 +8,23 @@
 
 </head>
 
-<body class="col-12" >
+<body class="col-12" onload="tax()">
   <div class="card">
     <div class="container">
       <h1>Бизнес калкулатор</h1>
       <div class="row">
-        <div class="col-6">
-          <label for="income">Приход</label>
-          <input type="number" id="income" name="income" class="form-control" value="0" min="0">
-        </div>
-        <div class="col-6">
-          <label for="expense">Разход</label>
-          <input type="number" id="expense" name="expense" class="form-control" value="0" min="0">
-        </div>
-        <div class="col-6">
-          <label for="incomeSecond">Приход месец №2</label>
-          <input type="number" id="incomeSecond" name="incomeSecond" class="form-control" value="0" min="0">
-        </div>
-        <div class="col-6">
-          <label for="expenseSecond">Разход месец №2</label>
-          <input type="number" id="expenseSecond" name="expenseSecond" class="form-control" value="0" min="0">
+        <div id="monthContainer">
+          <div class="col-6">
+            <label for="income">Приход месец №1</label>
+            <input type="number" id="income1" name="income" class="form-control" min="0" placeholder="0 лв" required>
+          </div>
+          <div class="col-6">
+            <label for="expense">Разход месец №1</label>
+            <input type="number" id="expense1" name="expense" class="form-control" min="0" placeholder="0 лв" required>
+          </div>
         </div>
         <div class="col-12">
-          <button class="secondMonth btn btn-secondary">+ Още един месец</button>
+          <button class="secondMonth btn btn-secondary" id="generateMonth">+ Още един месец</button>
         </div>
         <div class="col-6">
           <button class="tax btn">Данък</button>
